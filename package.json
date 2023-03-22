@@ -1,0 +1,15 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/xmscanfly/docs.git",
+  "author": "maoxueba <1625660674@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs --temp .temp",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "vue-template-compiler": "^2.7.14"
+  }
+}
