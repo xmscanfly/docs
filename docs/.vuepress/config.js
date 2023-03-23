@@ -6,7 +6,7 @@ module.exports = {
   title: "小茂哥哥的面试宝典",
   description: "勇敢阿茂 不怕困难",
   head: [
-    ["link", { rel: "icon", href: "/favicon.icon" }],
+    ["link", { rel: "icon", href: "/assets/img/logo.jpg" }],
     ["meta", { name: "author", content: "小茂哥哥" }],
   ],
   plugins: [
