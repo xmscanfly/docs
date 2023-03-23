@@ -9,16 +9,23 @@ module.exports = {
     ["link", { rel: "icon", href: "/assets/img/logo.jpg" }],
     ["meta", { name: "author", content: "小茂哥哥" }],
   ],
-  plugins: [
-    [
-      '@vuepress/last-updated',
-      {
-        transformer: (timestamp) => {
-          return moment(timestamp).format("lll");
-        }
+  plugins:{
+    '@vuepress/last-updated':{
+      transformer: (timestamp) => {
+        return moment(timestamp).format("lll");
       }
-    ]
-  ],
+    },
+    '@vssue/vuepress-plugin-vssue': {
+      // 设置 `platform` 而不是 `api`
+      platform: 'github-v4',
+      // 其他的 Vssue 配置
+      owner: 'xmscanfly',
+      repo: 'docs',
+      clientId: '6f2cc097c3e54b363efc',
+      clientSecret: 'd144977d36feafbc99d00d680b21f66b21319190',
+      // autoCreateIssue: true
+    },
+  },
   themeConfig: {
     logo: "/assets/img/logo.jpg",
     sidebar: "auto",
